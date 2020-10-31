@@ -1,4 +1,12 @@
 language: java
 jdk:
-- openjdk8
-script: ant build
+- openjdk11
+
+addons:
+  sonarcloud:
+    organization: GabryLele98
+    token: c8dafb87fa3899771a2de717e5c1c7741c950127
+
+script:
+- ant build
+- sonar-scanner
