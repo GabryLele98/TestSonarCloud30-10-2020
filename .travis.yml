@@ -4,10 +4,9 @@ jdk:
 
 addons:
  sonarcloud:
-  organization: "gabrylele98"
+  organization: gabrylele98
   token:
-   secure: "b053c146c2f74b9aa3867b04225b49717915622b"
-
+   secure: b053c146c2f74b9aa3867b04225b49717915622b
 script:
 - ant build
 - sonar-scanner
